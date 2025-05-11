@@ -39,7 +39,7 @@ fun MapaUsuarios(modifier: Modifier = Modifier, navController: NavController, no
                 )
             },
             actions = {
-                IconButton(onClick = {}) {
+                IconButton(onClick = {navController.navigate(Routes.PerfilUsuario(nombreUsuario))}) {
                     Icon(
                         imageVector = Icons.Outlined.Person,
                         contentDescription = "Perfil de usuario"
